@@ -57,6 +57,40 @@ def captured_background(cap,rom):
                     if color[3]:out.putpixel((x,y),color)
     return out
 
+def build_mode7_assets(capture, assets):
+    """Decode Stage 2 Mode 7 tilemap/pixels and the OAM start markers."""
+    ppu=json.loads((capture/'ppu.json').read_text());vram=(capture/'vram.bin').read_bytes();cgram=(capture/'cgram.bin').read_bytes();colors=palette(cgram)
+    world=Image.new('RGBA',(1024,1024),colors[0])
+    # Mode 7 uses 128x128 byte tile IDs, then 256 8bpp 8x8 tiles.
+    for ty in range(128):
+        for tx in range(128):
+            t=vram[(ty*128+tx)*2]
+            for y in range(8):
+                for x in range(8):
+                    index=vram[(t*64+y*8+x)*2+1]&0x7f
+                    if index:world.putpixel((tx*8+x,ty*8+y),colors[index])
+    world.save(assets/'stage2-mode7-map.png')
+    # Exact PPU matrix/scroll state at the ROM's "choose starting point" screen.
+    keys=['mode7A','mode7B','mode7C','mode7D','mode7X','mode7Y','mode7Hoff','mode7Voff','mode7FlipX','mode7FlipY','mode7LargeField','mode7Char0fill']
+    config={k:ppu[k] for k in keys};config['screenYOffset']=7;config['selectedStart']=1
+    # Start markers are the five 8x8 OAM sprites with tile $28/palette 3.
+    oam=(capture/'oam.bin').read_bytes();high=(capture/'highOam.bin').read_bytes();points=[]
+    def clip(v):
+        v &= 0xffff
+        return (v | ~0x3ff) if v & 0x2000 else (v & 0x3ff)
+    for i in range(128):
+        x,y,t,a=oam[i*4:i*4+4]
+        if t!=40 or ((a>>1)&7)!=3:continue
+        hw=int.from_bytes(high[(i//4)*2:(i//4)*2+2],'little');flags=(hw>>(2*(i&3)))&3;size=16 if flags&2 else 8
+        sx=x+size//2;sy=y+size//2+config['screenYOffset'];A=config['mode7A'];B=config['mode7B'];C=config['mode7C'];D=config['mode7D'];cx=config['mode7X'];cy=config['mode7Y'];ch=clip(config['mode7Hoff']-cx);cv=clip(config['mode7Voff']-cy);ry=sy-config['screenYOffset']
+        x0=((A*ch)&~63)+((B*ry)&~63)+((B*cv)&~63)+(cx<<8);y0=((C*ch)&~63)+((D*ry)&~63)+((D*cv)&~63)+(cy<<8)
+        points.append({'screen':[sx,sy],'world':[(x0+A*sx+B*ry)>>8,(y0+C*sx)>>8]})
+    config['startPoints']=points
+    (assets/'stage2-mode7.json').write_text(json.dumps(config,indent=2))
+    # The marker art itself is the SNES sprite tile, not a drawn placeholder.
+    sprite_base=2*(ppu['sprAdr1']+ppu['sprAdr2'])
+    tile(vram[sprite_base:],40,colors[48:64],4).save(assets/'stage2-start-marker.png')
+
 def main():
     import argparse
     ap=argparse.ArgumentParser();ap.add_argument('--rom',required=True,type=Path);ap.add_argument('--captures',required=True,type=Path);a=ap.parse_args();rom=a.rom.read_bytes();assets=ROOT/'web/assets';cap=a.captures/'level-loaded';vram=(cap/'vram.bin').read_bytes()
@@ -96,6 +130,8 @@ def main():
     atlas.save(assets/'player-frames.png');(assets/'player-frames.json').write_text(json.dumps(frames))
     captured_background(a.captures/'stage1-entry',rom).save(assets/'title.png')
     captured_background(cap,rom).crop((0,0,256,24)).save(assets/'hud.png')
+    stage2cap=a.captures/'stage2-point-select'
+    if stage2cap.exists():build_mode7_assets(stage2cap,assets)
     # Standard weapon: frame-by-frame SNES Y capture shows OAM tile $00C
     # in sprite palette 7. Use the verified pad-2 capture for VRAM and CGRAM.
     fire=a.captures/'pad-2';fp=json.loads((fire/'ppu.json').read_text());fv=(fire/'vram.bin').read_bytes();
@@ -107,6 +143,6 @@ def main():
             v=sum(((fv[base+(bit//2)*16+y*2+(bit&1)]>>(7-x))&1)<<bit for bit in range(4))
             if v:shot.putpixel((x,y),spal[v])
     shot.save(assets/'projectile-standard.png')
-    print('Built two Stage 1 maps,',len(frames),'player frames, and the standard projectile.')
+    print('Built Stage 1 maps,',len(frames),'player frames, the base projectile, and Stage 2 Mode 7 data when captured.')
 
 if __name__=='__main__':main()

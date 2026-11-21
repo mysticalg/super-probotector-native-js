@@ -6,7 +6,7 @@ An ongoing reverse-engineering project for the European SNES release. The browse
 
 Open `web/index.html` locally or use the GitHub Pages deployment. Controls: arrows move/aim, Z fires (B is a testing alias), X jumps, Shift changes the prototype weapon, Escape pauses, F toggles fullscreen.
 
-Current work includes extracted first-stage scenery, 228 decoded player metasprite/frame definitions, a translated ROM graphics decompressor with byte-for-byte RAM-output checks, and a prototype encounter loop. The base straight shot is now checked against the ROM OAM trace (speed, cadence, sprite, muzzle, facing); alternate weapons and aimed fire remain placeholders. The browser currently represents only Stage 1. Stage 2 has been reached in the reference capture and its selector data is documented, but it is not yet implemented in the browser. Later stages, bosses, verified enemy scripts, options/two-player modes and original music remain outstanding.
+Current work includes extracted first-stage scenery, 228 decoded player metasprite/frame definitions, a translated ROM graphics decompressor with byte-for-byte RAM-output checks, and a prototype encounter loop. The base straight shot is now checked against the ROM OAM trace (speed, cadence, sprite, muzzle, facing); alternate weapons and aimed fire remain placeholders. The browser includes the Stage 1 prototype plus a partial Stage 2 selector and overhead view using decoded Mode 7 map pixels and five captured start markers. Stage 2 movement, shots and player pose are provisional; collision, encounters, rotation and completion are absent. Later stages, bosses, verified enemy scripts, options/two-player modes and original music remain outstanding.
 
 ## Reverse-engineering evidence
 

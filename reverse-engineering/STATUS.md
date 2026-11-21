@@ -29,7 +29,7 @@ Only the base straight shot is verified. Other weapon IDs, aimed variants, picku
 
 The supplied European ROM stores the current stage ID in WRAM `$7E:0086`; ordinary start records 1. In the traced Stage 1 setup path, CPU `$00:BCDC` (DBR `$05`) loads this value with `LDX $86`; `$00:BCDE` then reads byte `$05:89E5,X` and stores it at `$7E:1670` and `$7E:1698`. The table is at file offset `$289E5` (LoROM `$05:89E5`). Stage IDs 1-6 select index bytes `00, 02, 02, 04, 04, 06`. Later reads in the same path use bank-$05 tables `$89EC`, `$8A00`, `$8A14`, and `$8A1C`. Their meanings and the complete transition script are still being decoded; this is not yet a complete all-stage content table.
 
-This lookup was exercised against the supplied ROM. Setting `$7E:0086=2` during the game-start transition reaches the "CHOOSE YOUR STARTING POINT" map; pressing Start then enters Stage 2 overhead gameplay. The point-select reference path executes at `$03:E6BB`. Captures are in `work/captures/stage2-point-select/` and `work/captures/stage2-play-entry/`. This verifies a ROM path to Stage 2, but Stage 2 has not yet been reconstructed in the browser.
+This lookup was exercised against the supplied ROM. Setting `$7E:0086=2` during the game-start transition reaches the "CHOOSE YOUR STARTING POINT" map; pressing Start then enters Stage 2 overhead gameplay. The point-select reference path executes at `$03:E6BB`. Captures are in `work/captures/stage2-point-select/` and `work/captures/stage2-play-entry/`. The browser now decodes the captured Mode 7 VRAM into a 1024x1024 world texture and applies the captured matrix for the five-point selector. Selecting a point enters a partial overhead view. Playwright checked selector navigation, entry, movement and firing without console errors. Player pose, movement, camera and shots remain provisional; stage collision, enemies, rotation and completion are absent.
 
 Read the stage-index table from the hash-checked ROM with `python tools/stage_selector.py --rom <headerless-european-rom>`.
 
@@ -55,4 +55,8 @@ This is a native Canvas/JavaScript prototype, not an emulator wrapper. It has a 
 
 ## Publishing status
 
-The incomplete milestone is public at `https://github.com/mysticalg/super-probotector-native-js`; GitHub Pages deployment is at `https://mysticalg.github.io/super-probotector-native-js/`. The existing Page workflow previously returned HTTP 200; the latest weapon/table milestone is pending push and a fresh deployment check. The web code and extracted assets are published; no ROM image is included. Keep labeling it as incomplete until the remaining stages and systems are implemented and checked.
+The incomplete milestone is public at `https://github.com/mysticalg/super-probotector-native-js`; GitHub Pages deployment is at `https://mysticalg.github.io/super-probotector-native-js/`. The existing Page workflow previously returned HTTP 200; the weapon/table milestone was deployed successfully; the Stage 2 slice follows it. The web code and extracted assets are published; no ROM image is included. Keep labeling it as incomplete until the remaining stages and systems are implemented and checked.
+
+## Additional input and projectile routine evidence
+
+The European trace at $00:8B2E reads $4218,X, stores held controller words at $20,X and newly pressed bits at $28,X. Holding Y produces $4000 in $20. The firing-only execution path reaches $00:D642 (LDA $22,X; BIT $88), weapon selection through $1D84,X and $05:A021,Y, then $00:D6D1. The base spawn writes $3E0C at object offset $14 and loads velocity components from $05:8E33/$8D93/$8E13/$8D73. $00:E153-$00:E169 integrates the fractional and integer position words. Further table semantics remain under investigation.
