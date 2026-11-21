@@ -70,7 +70,7 @@ let stage2Shots = [];
 
 function baseVelocity(face, aim, moving) {
   // Confirmed spawn offsets: up=0, up/right=16, right=32, left=96.
-  const offset = aim < 0 ? (moving && face > 0 ? 16 : 0) : face > 0 ? 32 : 96;
+  const offset = aim < 0 ? (moving ? (face > 0 ? 16 : 112) : 0) : aim > 0 && moving && face > 0 ? 48 : face > 0 ? 32 : 96;
   const t = weaponTables?.velocityWords;
   if (!t) return [face * 7.4, 0];
   const i = offset / 2;
