@@ -1,0 +1,1442 @@
+{
+  "105": {
+    "syntax": "ADC #const",
+    "mode": "Immediate",
+    "size": 2,
+    "variable": true
+  },
+  "109": {
+    "syntax": "ADC addr",
+    "mode": "Absolute",
+    "size": 3,
+    "variable": false
+  },
+  "111": {
+    "syntax": "ADC long",
+    "mode": "Absolute Long",
+    "size": 4,
+    "variable": false
+  },
+  "101": {
+    "syntax": "ADC dp",
+    "mode": "Direct Page",
+    "size": 2,
+    "variable": false
+  },
+  "114": {
+    "syntax": "ADC (dp)",
+    "mode": "Direct Page Indirect",
+    "size": 2,
+    "variable": false
+  },
+  "103": {
+    "syntax": "ADC [dp]",
+    "mode": "Direct Page Indirect Long",
+    "size": 2,
+    "variable": false
+  },
+  "125": {
+    "syntax": "ADC addr, X",
+    "mode": "Absolute Indexed, X",
+    "size": 3,
+    "variable": false
+  },
+  "127": {
+    "syntax": "ADC long, X",
+    "mode": "Absolute Long Indexed, X",
+    "size": 4,
+    "variable": false
+  },
+  "121": {
+    "syntax": "ADC addr, Y",
+    "mode": "Absolute Indexed, Y",
+    "size": 3,
+    "variable": false
+  },
+  "117": {
+    "syntax": "ADC dp, X",
+    "mode": "Direct Page Indexed, X",
+    "size": 2,
+    "variable": false
+  },
+  "97": {
+    "syntax": "ADC (dp, X)",
+    "mode": "Direct Page Indirect, X",
+    "size": 2,
+    "variable": false
+  },
+  "113": {
+    "syntax": "ADC (dp), Y",
+    "mode": "DP Indirect Indexed, Y",
+    "size": 2,
+    "variable": false
+  },
+  "119": {
+    "syntax": "ADC [dp], Y",
+    "mode": "DP Indirect Long Indexed, Y",
+    "size": 2,
+    "variable": false
+  },
+  "99": {
+    "syntax": "ADC sr, S",
+    "mode": "Stack Relative",
+    "size": 2,
+    "variable": false
+  },
+  "115": {
+    "syntax": "ADC (sr, S), Y",
+    "mode": "SR Indirect Indexed, Y",
+    "size": 2,
+    "variable": false
+  },
+  "41": {
+    "syntax": "AND #const",
+    "mode": "Immediate",
+    "size": 2,
+    "variable": true
+  },
+  "45": {
+    "syntax": "AND addr",
+    "mode": "Absolute",
+    "size": 3,
+    "variable": false
+  },
+  "47": {
+    "syntax": "AND long",
+    "mode": "Absolute Long",
+    "size": 4,
+    "variable": false
+  },
+  "37": {
+    "syntax": "AND dp",
+    "mode": "Direct Page",
+    "size": 2,
+    "variable": false
+  },
+  "50": {
+    "syntax": "AND (dp)",
+    "mode": "Direct Page Indirect",
+    "size": 2,
+    "variable": false
+  },
+  "39": {
+    "syntax": "AND [dp]",
+    "mode": "Direct Page Indirect Long",
+    "size": 2,
+    "variable": false
+  },
+  "61": {
+    "syntax": "AND addr, X",
+    "mode": "Absolute Indexed, X",
+    "size": 3,
+    "variable": false
+  },
+  "63": {
+    "syntax": "AND long, X",
+    "mode": "Absolute Long Indexed, X",
+    "size": 4,
+    "variable": false
+  },
+  "57": {
+    "syntax": "AND addr, Y",
+    "mode": "Absolute Indexed, Y",
+    "size": 3,
+    "variable": false
+  },
+  "53": {
+    "syntax": "AND dp, X",
+    "mode": "Direct Page Indexed, X",
+    "size": 2,
+    "variable": false
+  },
+  "33": {
+    "syntax": "AND (dp, X)",
+    "mode": "Direct Page Indirect, X",
+    "size": 2,
+    "variable": false
+  },
+  "49": {
+    "syntax": "AND (dp), Y",
+    "mode": "DP Indirect Indexed, Y",
+    "size": 2,
+    "variable": false
+  },
+  "55": {
+    "syntax": "AND [dp], Y",
+    "mode": "DP Indirect Long Indexed, Y",
+    "size": 2,
+    "variable": false
+  },
+  "35": {
+    "syntax": "AND sr, S",
+    "mode": "Stack Relative",
+    "size": 2,
+    "variable": false
+  },
+  "51": {
+    "syntax": "AND (sr, S), Y",
+    "mode": "SR Indirect Indexed, Y",
+    "size": 2,
+    "variable": false
+  },
+  "10": {
+    "syntax": "ASL",
+    "mode": "Accumulator",
+    "size": 1,
+    "variable": false
+  },
+  "14": {
+    "syntax": "ASL addr",
+    "mode": "Absolute",
+    "size": 3,
+    "variable": false
+  },
+  "6": {
+    "syntax": "ASL dp",
+    "mode": "Direct Page",
+    "size": 2,
+    "variable": false
+  },
+  "30": {
+    "syntax": "ASL addr, X",
+    "mode": "Absolute Indexed, X",
+    "size": 3,
+    "variable": false
+  },
+  "22": {
+    "syntax": "ASL dp, X",
+    "mode": "Direct Page Indexed, X",
+    "size": 2,
+    "variable": false
+  },
+  "137": {
+    "syntax": "BIT #const",
+    "mode": "Immediate",
+    "size": 2,
+    "variable": true
+  },
+  "44": {
+    "syntax": "BIT addr",
+    "mode": "Absolute",
+    "size": 3,
+    "variable": false
+  },
+  "36": {
+    "syntax": "BIT dp",
+    "mode": "Direct Page",
+    "size": 2,
+    "variable": false
+  },
+  "60": {
+    "syntax": "BIT addr, X",
+    "mode": "Absolute Indexed, X",
+    "size": 3,
+    "variable": false
+  },
+  "52": {
+    "syntax": "BIT dp, X",
+    "mode": "Direct Page Indexed, X",
+    "size": 2,
+    "variable": false
+  },
+  "0": {
+    "syntax": "BRK param",
+    "mode": "Interrupt",
+    "size": 2,
+    "variable": false
+  },
+  "2": {
+    "syntax": "COP param",
+    "mode": "Interrupt",
+    "size": 2,
+    "variable": false
+  },
+  "24": {
+    "syntax": "CLC",
+    "mode": "Clear Carry Flag",
+    "size": 1,
+    "variable": false
+  },
+  "88": {
+    "syntax": "CLI",
+    "mode": "Clear Interrupt Disable Flag",
+    "size": 1,
+    "variable": false
+  },
+  "216": {
+    "syntax": "CLD",
+    "mode": "Clear Decimal Flag",
+    "size": 1,
+    "variable": false
+  },
+  "184": {
+    "syntax": "CLV",
+    "mode": "Clear Overflow Flag",
+    "size": 1,
+    "variable": false
+  },
+  "201": {
+    "syntax": "CMP #const",
+    "mode": "Immediate",
+    "size": 2,
+    "variable": true
+  },
+  "205": {
+    "syntax": "CMP addr",
+    "mode": "Absolute",
+    "size": 3,
+    "variable": false
+  },
+  "207": {
+    "syntax": "CMP long",
+    "mode": "Absolute Long",
+    "size": 4,
+    "variable": false
+  },
+  "197": {
+    "syntax": "CMP dp",
+    "mode": "Direct Page",
+    "size": 2,
+    "variable": false
+  },
+  "210": {
+    "syntax": "CMP (dp)",
+    "mode": "Direct Page Indirect",
+    "size": 2,
+    "variable": false
+  },
+  "199": {
+    "syntax": "CMP [dp]",
+    "mode": "Direct Page Indirect Long",
+    "size": 2,
+    "variable": false
+  },
+  "221": {
+    "syntax": "CMP addr, X",
+    "mode": "Absolute Indexed, X",
+    "size": 3,
+    "variable": false
+  },
+  "223": {
+    "syntax": "CMP long, X",
+    "mode": "Absolute Long Indexed, X",
+    "size": 4,
+    "variable": false
+  },
+  "217": {
+    "syntax": "CMP addr, Y",
+    "mode": "Absolute Indexed, Y",
+    "size": 3,
+    "variable": false
+  },
+  "213": {
+    "syntax": "CMP dp, X",
+    "mode": "Direct Page Indexed, X",
+    "size": 2,
+    "variable": false
+  },
+  "193": {
+    "syntax": "CMP (dp, X)",
+    "mode": "Direct Page Indirect, X",
+    "size": 2,
+    "variable": false
+  },
+  "209": {
+    "syntax": "CMP (dp), Y",
+    "mode": "DP Indirect Indexed, Y",
+    "size": 2,
+    "variable": false
+  },
+  "215": {
+    "syntax": "CMP [dp], Y",
+    "mode": "DP Indirect Long Indexed, Y",
+    "size": 2,
+    "variable": false
+  },
+  "195": {
+    "syntax": "CMP sr, S",
+    "mode": "Stack Relative",
+    "size": 2,
+    "variable": false
+  },
+  "211": {
+    "syntax": "CMP (sr, S), Y",
+    "mode": "SR Indirect Indexed, Y",
+    "size": 2,
+    "variable": false
+  },
+  "224": {
+    "syntax": "CPX #const",
+    "mode": "Immediate",
+    "size": 2,
+    "variable": true
+  },
+  "236": {
+    "syntax": "CPX addr",
+    "mode": "Absolute",
+    "size": 3,
+    "variable": false
+  },
+  "228": {
+    "syntax": "CPX dp",
+    "mode": "Direct Page",
+    "size": 2,
+    "variable": false
+  },
+  "192": {
+    "syntax": "CPY #const",
+    "mode": "Immediate",
+    "size": 2,
+    "variable": true
+  },
+  "204": {
+    "syntax": "CPY addr",
+    "mode": "Absolute",
+    "size": 3,
+    "variable": false
+  },
+  "196": {
+    "syntax": "CPY dp",
+    "mode": "Direct Page",
+    "size": 2,
+    "variable": false
+  },
+  "58": {
+    "syntax": "DEC",
+    "mode": "Accumulator",
+    "size": 1,
+    "variable": false
+  },
+  "206": {
+    "syntax": "DEC addr",
+    "mode": "Absolute",
+    "size": 3,
+    "variable": false
+  },
+  "198": {
+    "syntax": "DEC dp",
+    "mode": "Direct Page",
+    "size": 2,
+    "variable": false
+  },
+  "222": {
+    "syntax": "DEC addr, X",
+    "mode": "Absolute Indexed, X",
+    "size": 3,
+    "variable": false
+  },
+  "214": {
+    "syntax": "DEC dp, X",
+    "mode": "Direct Page Indexed, X",
+    "size": 2,
+    "variable": false
+  },
+  "202": {
+    "syntax": "DEX",
+    "mode": "Implied",
+    "size": 1,
+    "variable": false
+  },
+  "136": {
+    "syntax": "DEY",
+    "mode": "Implied",
+    "size": 1,
+    "variable": false
+  },
+  "73": {
+    "syntax": "EOR #const",
+    "mode": "Immediate",
+    "size": 2,
+    "variable": true
+  },
+  "77": {
+    "syntax": "EOR addr",
+    "mode": "Absolute",
+    "size": 3,
+    "variable": false
+  },
+  "79": {
+    "syntax": "EOR long",
+    "mode": "Absolute Long",
+    "size": 4,
+    "variable": false
+  },
+  "69": {
+    "syntax": "EOR dp",
+    "mode": "Direct Page",
+    "size": 2,
+    "variable": false
+  },
+  "82": {
+    "syntax": "EOR (dp)",
+    "mode": "Direct Page Indirect",
+    "size": 2,
+    "variable": false
+  },
+  "71": {
+    "syntax": "EOR [dp]",
+    "mode": "Direct Page Indirect Long",
+    "size": 2,
+    "variable": false
+  },
+  "93": {
+    "syntax": "EOR addr, X",
+    "mode": "Absolute Indexed, X",
+    "size": 3,
+    "variable": false
+  },
+  "95": {
+    "syntax": "EOR long, X",
+    "mode": "Absolute Long Indexed, X",
+    "size": 4,
+    "variable": false
+  },
+  "89": {
+    "syntax": "EOR addr, Y",
+    "mode": "Absolute Indexed, Y",
+    "size": 3,
+    "variable": false
+  },
+  "85": {
+    "syntax": "EOR dp, X",
+    "mode": "Direct Page Indexed, X",
+    "size": 2,
+    "variable": false
+  },
+  "65": {
+    "syntax": "EOR (dp, X)",
+    "mode": "Direct Page Indirect, X",
+    "size": 2,
+    "variable": false
+  },
+  "81": {
+    "syntax": "EOR (dp), Y",
+    "mode": "DP Indirect Indexed, Y",
+    "size": 2,
+    "variable": false
+  },
+  "87": {
+    "syntax": "EOR [dp], Y",
+    "mode": "DP Indirect Long Indexed, Y",
+    "size": 2,
+    "variable": false
+  },
+  "67": {
+    "syntax": "EOR sr, S",
+    "mode": "Stack Relative",
+    "size": 2,
+    "variable": false
+  },
+  "83": {
+    "syntax": "EOR (sr, S), Y",
+    "mode": "SR Indirect Indexed, Y",
+    "size": 2,
+    "variable": false
+  },
+  "26": {
+    "syntax": "INC",
+    "mode": "Accumulator",
+    "size": 1,
+    "variable": false
+  },
+  "238": {
+    "syntax": "INC addr",
+    "mode": "Absolute",
+    "size": 3,
+    "variable": false
+  },
+  "230": {
+    "syntax": "INC dp",
+    "mode": "Direct Page",
+    "size": 2,
+    "variable": false
+  },
+  "254": {
+    "syntax": "INC addr, X",
+    "mode": "Absolute Indexed, X",
+    "size": 3,
+    "variable": false
+  },
+  "246": {
+    "syntax": "INC dp, X",
+    "mode": "Direct Page Indexed, X",
+    "size": 2,
+    "variable": false
+  },
+  "232": {
+    "syntax": "INX",
+    "mode": "Implied",
+    "size": 1,
+    "variable": false
+  },
+  "200": {
+    "syntax": "INY",
+    "mode": "Implied",
+    "size": 1,
+    "variable": false
+  },
+  "32": {
+    "syntax": "JSR addr",
+    "mode": "Absolute",
+    "size": 3,
+    "variable": false
+  },
+  "252": {
+    "syntax": "JSR (addr, X)",
+    "mode": "Absolute Indexed Indirect, X",
+    "size": 3,
+    "variable": false
+  },
+  "34": {
+    "syntax": "JSL long",
+    "mode": "Absolute Long",
+    "size": 4,
+    "variable": false
+  },
+  "169": {
+    "syntax": "LDA #const",
+    "mode": "Immediate",
+    "size": 2,
+    "variable": true
+  },
+  "173": {
+    "syntax": "LDA addr",
+    "mode": "Absolute",
+    "size": 3,
+    "variable": false
+  },
+  "175": {
+    "syntax": "LDA long",
+    "mode": "Absolute Long",
+    "size": 4,
+    "variable": false
+  },
+  "165": {
+    "syntax": "LDA dp",
+    "mode": "Direct Page",
+    "size": 2,
+    "variable": false
+  },
+  "178": {
+    "syntax": "LDA (dp)",
+    "mode": "Direct Page Indirect",
+    "size": 2,
+    "variable": false
+  },
+  "167": {
+    "syntax": "LDA [dp]",
+    "mode": "Direct Page Indirect Long",
+    "size": 2,
+    "variable": false
+  },
+  "189": {
+    "syntax": "LDA addr, X",
+    "mode": "Absolute Indexed, X",
+    "size": 3,
+    "variable": false
+  },
+  "191": {
+    "syntax": "LDA long, X",
+    "mode": "Absolute Long Indexed, X",
+    "size": 4,
+    "variable": false
+  },
+  "185": {
+    "syntax": "LDA addr, Y",
+    "mode": "Absolute Indexed, Y",
+    "size": 3,
+    "variable": false
+  },
+  "181": {
+    "syntax": "LDA dp, X",
+    "mode": "Direct Page Indexed, X",
+    "size": 2,
+    "variable": false
+  },
+  "161": {
+    "syntax": "LDA (dp, X)",
+    "mode": "Direct Page Indirect, X",
+    "size": 2,
+    "variable": false
+  },
+  "177": {
+    "syntax": "LDA (dp), Y",
+    "mode": "DP Indirect Indexed, Y",
+    "size": 2,
+    "variable": false
+  },
+  "183": {
+    "syntax": "LDA [dp], Y",
+    "mode": "DP Indirect Long Indexed, Y",
+    "size": 2,
+    "variable": false
+  },
+  "163": {
+    "syntax": "LDA sr, S",
+    "mode": "Stack Relative",
+    "size": 2,
+    "variable": false
+  },
+  "179": {
+    "syntax": "LDA (sr, S), Y",
+    "mode": "SR Indirect Indexed, Y",
+    "size": 2,
+    "variable": false
+  },
+  "162": {
+    "syntax": "LDX #const",
+    "mode": "Immediate",
+    "size": 2,
+    "variable": true
+  },
+  "174": {
+    "syntax": "LDX addr",
+    "mode": "Absolute",
+    "size": 3,
+    "variable": false
+  },
+  "166": {
+    "syntax": "LDX dp",
+    "mode": "Direct Page",
+    "size": 2,
+    "variable": false
+  },
+  "190": {
+    "syntax": "LDX addr, Y",
+    "mode": "Absolute Indexed, Y",
+    "size": 3,
+    "variable": false
+  },
+  "182": {
+    "syntax": "LDX dp, Y",
+    "mode": "Direct Page Indexed, Y",
+    "size": 2,
+    "variable": false
+  },
+  "160": {
+    "syntax": "LDY #const",
+    "mode": "Immediate",
+    "size": 2,
+    "variable": true
+  },
+  "172": {
+    "syntax": "LDY addr",
+    "mode": "Absolute",
+    "size": 3,
+    "variable": false
+  },
+  "164": {
+    "syntax": "LDY dp",
+    "mode": "Direct Page",
+    "size": 2,
+    "variable": false
+  },
+  "188": {
+    "syntax": "LDY addr, X",
+    "mode": "Absolute Indexed, X",
+    "size": 3,
+    "variable": false
+  },
+  "180": {
+    "syntax": "LDY dp, X",
+    "mode": "Direct Page Indexed, X",
+    "size": 2,
+    "variable": false
+  },
+  "74": {
+    "syntax": "LSR",
+    "mode": "Accumulator",
+    "size": 1,
+    "variable": false
+  },
+  "78": {
+    "syntax": "LSR addr",
+    "mode": "Absolute",
+    "size": 3,
+    "variable": false
+  },
+  "70": {
+    "syntax": "LSR dp",
+    "mode": "Direct Page",
+    "size": 2,
+    "variable": false
+  },
+  "94": {
+    "syntax": "LSR addr, X",
+    "mode": "Absolute Indexed, X",
+    "size": 3,
+    "variable": false
+  },
+  "86": {
+    "syntax": "LSR dp, X",
+    "mode": "Direct Page Indexed, X",
+    "size": 2,
+    "variable": false
+  },
+  "84": {
+    "syntax": "MVN srcBank, destBank",
+    "mode": "Block Move",
+    "size": 3,
+    "variable": false
+  },
+  "68": {
+    "syntax": "MVP srcBank, destBank",
+    "mode": "Block Move",
+    "size": 3,
+    "variable": false
+  },
+  "234": {
+    "syntax": "NOP",
+    "mode": "Implied",
+    "size": 1,
+    "variable": false
+  },
+  "9": {
+    "syntax": "ORA #const",
+    "mode": "Immediate",
+    "size": 2,
+    "variable": true
+  },
+  "13": {
+    "syntax": "ORA addr",
+    "mode": "Absolute",
+    "size": 3,
+    "variable": false
+  },
+  "15": {
+    "syntax": "ORA long",
+    "mode": "Absolute Long",
+    "size": 4,
+    "variable": false
+  },
+  "5": {
+    "syntax": "ORA dp",
+    "mode": "Direct Page",
+    "size": 2,
+    "variable": false
+  },
+  "18": {
+    "syntax": "ORA (dp)",
+    "mode": "Direct Page Indirect",
+    "size": 2,
+    "variable": false
+  },
+  "7": {
+    "syntax": "ORA [dp]",
+    "mode": "Direct Page Indirect Long",
+    "size": 2,
+    "variable": false
+  },
+  "29": {
+    "syntax": "ORA addr, X",
+    "mode": "Absolute Indexed, X",
+    "size": 3,
+    "variable": false
+  },
+  "31": {
+    "syntax": "ORA long, X",
+    "mode": "Absolute Long Indexed, X",
+    "size": 4,
+    "variable": false
+  },
+  "25": {
+    "syntax": "ORA addr, Y",
+    "mode": "Absolute Indexed, Y",
+    "size": 3,
+    "variable": false
+  },
+  "21": {
+    "syntax": "ORA dp, X",
+    "mode": "Direct Page Indexed, X",
+    "size": 2,
+    "variable": false
+  },
+  "1": {
+    "syntax": "ORA (dp, X)",
+    "mode": "Direct Page Indirect, X",
+    "size": 2,
+    "variable": false
+  },
+  "17": {
+    "syntax": "ORA (dp), Y",
+    "mode": "DP Indirect Indexed, Y",
+    "size": 2,
+    "variable": false
+  },
+  "23": {
+    "syntax": "ORA [dp], Y",
+    "mode": "DP Indirect Long Indexed, Y",
+    "size": 2,
+    "variable": false
+  },
+  "3": {
+    "syntax": "ORA sr, S",
+    "mode": "Stack Relative",
+    "size": 2,
+    "variable": false
+  },
+  "19": {
+    "syntax": "ORA (sr, S), Y",
+    "mode": "SR Indirect Indexed, Y",
+    "size": 2,
+    "variable": false
+  },
+  "244": {
+    "syntax": "PEA addr",
+    "mode": "Stack (Absolute)",
+    "size": 3,
+    "variable": false
+  },
+  "212": {
+    "syntax": "PEI (dp)",
+    "mode": "Stack (DP Indirect)",
+    "size": 2,
+    "variable": false
+  },
+  "98": {
+    "syntax": "PER label",
+    "mode": "Stack (PC Relative Long)",
+    "size": 3,
+    "variable": false
+  },
+  "72": {
+    "syntax": "PHA",
+    "mode": "Push Accumulator",
+    "size": 1,
+    "variable": false
+  },
+  "139": {
+    "syntax": "PHB",
+    "mode": "Push Data Bank",
+    "size": 1,
+    "variable": false
+  },
+  "11": {
+    "syntax": "PHD",
+    "mode": "Push Direct Page Register",
+    "size": 1,
+    "variable": false
+  },
+  "75": {
+    "syntax": "PHK",
+    "mode": "Push Program Bank Register",
+    "size": 1,
+    "variable": false
+  },
+  "8": {
+    "syntax": "PHP",
+    "mode": "Push Processor Status Register",
+    "size": 1,
+    "variable": false
+  },
+  "218": {
+    "syntax": "PHX",
+    "mode": "Push Index Register X",
+    "size": 1,
+    "variable": false
+  },
+  "90": {
+    "syntax": "PHY",
+    "mode": "Push Index Register Y",
+    "size": 1,
+    "variable": false
+  },
+  "104": {
+    "syntax": "PLA",
+    "mode": "Pull Accumulator",
+    "size": 1,
+    "variable": false
+  },
+  "171": {
+    "syntax": "PLB",
+    "mode": "Pull Data Bank",
+    "size": 1,
+    "variable": false
+  },
+  "43": {
+    "syntax": "PLD",
+    "mode": "Pull Direct Page Register",
+    "size": 1,
+    "variable": false
+  },
+  "40": {
+    "syntax": "PLP",
+    "mode": "Pull Processor Status Register",
+    "size": 1,
+    "variable": false
+  },
+  "250": {
+    "syntax": "PLX",
+    "mode": "Pull Index Register X",
+    "size": 1,
+    "variable": false
+  },
+  "122": {
+    "syntax": "PLY",
+    "mode": "Pull Index Register Y",
+    "size": 1,
+    "variable": false
+  },
+  "194": {
+    "syntax": "REP #const",
+    "mode": "Immediate",
+    "size": 2,
+    "variable": false
+  },
+  "42": {
+    "syntax": "ROL",
+    "mode": "Accumulator",
+    "size": 1,
+    "variable": false
+  },
+  "46": {
+    "syntax": "ROL addr",
+    "mode": "Absolute",
+    "size": 3,
+    "variable": false
+  },
+  "38": {
+    "syntax": "ROL dp",
+    "mode": "Direct Page",
+    "size": 2,
+    "variable": false
+  },
+  "62": {
+    "syntax": "ROL addr, X",
+    "mode": "Absolute Indexed, X",
+    "size": 3,
+    "variable": false
+  },
+  "54": {
+    "syntax": "ROL dp, X",
+    "mode": "Direct Page Indexed, X",
+    "size": 2,
+    "variable": false
+  },
+  "106": {
+    "syntax": "ROR",
+    "mode": "Accumulator",
+    "size": 1,
+    "variable": false
+  },
+  "110": {
+    "syntax": "ROR addr",
+    "mode": "Absolute",
+    "size": 3,
+    "variable": false
+  },
+  "102": {
+    "syntax": "ROR dp",
+    "mode": "Direct Page",
+    "size": 2,
+    "variable": false
+  },
+  "126": {
+    "syntax": "ROR addr, X",
+    "mode": "Absolute Indexed, X",
+    "size": 3,
+    "variable": false
+  },
+  "118": {
+    "syntax": "ROR dp, X",
+    "mode": "Direct Page Indexed, X",
+    "size": 2,
+    "variable": false
+  },
+  "64": {
+    "syntax": "RTI",
+    "mode": "Stack (return interrupt)",
+    "size": 1,
+    "variable": false
+  },
+  "96": {
+    "syntax": "RTS",
+    "mode": "Stack (return)",
+    "size": 1,
+    "variable": false
+  },
+  "107": {
+    "syntax": "RTL",
+    "mode": "Stack (return long)",
+    "size": 1,
+    "variable": false
+  },
+  "233": {
+    "syntax": "SBC #const",
+    "mode": "Immediate",
+    "size": 2,
+    "variable": true
+  },
+  "237": {
+    "syntax": "SBC addr",
+    "mode": "Absolute",
+    "size": 3,
+    "variable": false
+  },
+  "239": {
+    "syntax": "SBC long",
+    "mode": "Absolute Long",
+    "size": 4,
+    "variable": false
+  },
+  "229": {
+    "syntax": "SBC dp",
+    "mode": "Direct Page",
+    "size": 2,
+    "variable": false
+  },
+  "242": {
+    "syntax": "SBC (dp)",
+    "mode": "Direct Page Indirect",
+    "size": 2,
+    "variable": false
+  },
+  "231": {
+    "syntax": "SBC [dp]",
+    "mode": "Direct Page Indirect Long",
+    "size": 2,
+    "variable": false
+  },
+  "253": {
+    "syntax": "SBC addr, X",
+    "mode": "Absolute Indexed, X",
+    "size": 3,
+    "variable": false
+  },
+  "255": {
+    "syntax": "SBC long, X",
+    "mode": "Absolute Long Indexed, X",
+    "size": 4,
+    "variable": false
+  },
+  "249": {
+    "syntax": "SBC addr, Y",
+    "mode": "Absolute Indexed, Y",
+    "size": 3,
+    "variable": false
+  },
+  "245": {
+    "syntax": "SBC dp, X",
+    "mode": "Direct Page Indexed, X",
+    "size": 2,
+    "variable": false
+  },
+  "225": {
+    "syntax": "SBC (dp, X)",
+    "mode": "Direct Page Indirect, X",
+    "size": 2,
+    "variable": false
+  },
+  "241": {
+    "syntax": "SBC (dp), Y",
+    "mode": "DP Indirect Indexed, Y",
+    "size": 2,
+    "variable": false
+  },
+  "247": {
+    "syntax": "SBC [dp], Y",
+    "mode": "DP Indirect Long Indexed, Y",
+    "size": 2,
+    "variable": false
+  },
+  "227": {
+    "syntax": "SBC sr, S",
+    "mode": "Stack Relative",
+    "size": 2,
+    "variable": false
+  },
+  "243": {
+    "syntax": "SBC (sr, S), Y",
+    "mode": "SR Indirect Indexed, Y",
+    "size": 2,
+    "variable": false
+  },
+  "56": {
+    "syntax": "SEC",
+    "mode": "Set Carry Flag",
+    "size": 1,
+    "variable": false
+  },
+  "120": {
+    "syntax": "SEI",
+    "mode": "Set Interrupt Disable Flag",
+    "size": 1,
+    "variable": false
+  },
+  "248": {
+    "syntax": "SED",
+    "mode": "Set Decimal Flag",
+    "size": 1,
+    "variable": false
+  },
+  "226": {
+    "syntax": "SEP #const",
+    "mode": "Immediate",
+    "size": 2,
+    "variable": false
+  },
+  "141": {
+    "syntax": "STA addr",
+    "mode": "Absolute",
+    "size": 3,
+    "variable": false
+  },
+  "143": {
+    "syntax": "STA long",
+    "mode": "Absolute Long",
+    "size": 4,
+    "variable": false
+  },
+  "133": {
+    "syntax": "STA dp",
+    "mode": "Direct Page",
+    "size": 2,
+    "variable": false
+  },
+  "146": {
+    "syntax": "STA (dp)",
+    "mode": "Direct Page Indirect",
+    "size": 2,
+    "variable": false
+  },
+  "135": {
+    "syntax": "STA [dp]",
+    "mode": "Direct Page Indirect Long",
+    "size": 2,
+    "variable": false
+  },
+  "157": {
+    "syntax": "STA addr, X",
+    "mode": "Absolute Indexed, X",
+    "size": 3,
+    "variable": false
+  },
+  "159": {
+    "syntax": "STA long, X",
+    "mode": "Absolute Long Indexed, X",
+    "size": 4,
+    "variable": false
+  },
+  "153": {
+    "syntax": "STA addr, Y",
+    "mode": "Absolute Indexed, Y",
+    "size": 3,
+    "variable": false
+  },
+  "149": {
+    "syntax": "STA dp, X",
+    "mode": "Direct Page Indexed, X",
+    "size": 2,
+    "variable": false
+  },
+  "129": {
+    "syntax": "STA (dp, X)",
+    "mode": "Direct Page Indirect, X",
+    "size": 2,
+    "variable": false
+  },
+  "145": {
+    "syntax": "STA (dp), Y",
+    "mode": "DP Indirect Indexed, Y",
+    "size": 2,
+    "variable": false
+  },
+  "151": {
+    "syntax": "STA [dp], Y",
+    "mode": "DP Indirect Long Indexed, Y",
+    "size": 2,
+    "variable": false
+  },
+  "131": {
+    "syntax": "STA sr, S",
+    "mode": "Stack Relative",
+    "size": 2,
+    "variable": false
+  },
+  "147": {
+    "syntax": "STA (sr, S), Y",
+    "mode": "SR Indirect Indexed, Y",
+    "size": 2,
+    "variable": false
+  },
+  "219": {
+    "syntax": "STP",
+    "mode": "Implied",
+    "size": 1,
+    "variable": false
+  },
+  "142": {
+    "syntax": "STX addr",
+    "mode": "Absolute",
+    "size": 3,
+    "variable": false
+  },
+  "134": {
+    "syntax": "STX dp",
+    "mode": "Direct Page",
+    "size": 2,
+    "variable": false
+  },
+  "150": {
+    "syntax": "STX dp, Y",
+    "mode": "Direct Page Indexed, Y",
+    "size": 2,
+    "variable": false
+  },
+  "140": {
+    "syntax": "STY addr",
+    "mode": "Absolute",
+    "size": 3,
+    "variable": false
+  },
+  "132": {
+    "syntax": "STY dp",
+    "mode": "Direct Page",
+    "size": 2,
+    "variable": false
+  },
+  "148": {
+    "syntax": "STY dp, X",
+    "mode": "Direct Page Indexed, X",
+    "size": 2,
+    "variable": false
+  },
+  "156": {
+    "syntax": "STZ addr",
+    "mode": "Absolute",
+    "size": 3,
+    "variable": false
+  },
+  "100": {
+    "syntax": "STZ dp",
+    "mode": "Direct Page",
+    "size": 2,
+    "variable": false
+  },
+  "158": {
+    "syntax": "STZ addr, X",
+    "mode": "Absolute Indexed, X",
+    "size": 3,
+    "variable": false
+  },
+  "116": {
+    "syntax": "STZ dp, X",
+    "mode": "Direct Page Indexed, X",
+    "size": 2,
+    "variable": false
+  },
+  "170": {
+    "syntax": "TAX",
+    "mode": "Transfer A to X",
+    "size": 1,
+    "variable": false
+  },
+  "168": {
+    "syntax": "TAY",
+    "mode": "Transfer A to Y",
+    "size": 1,
+    "variable": false
+  },
+  "91": {
+    "syntax": "TCD",
+    "mode": "Transfer 16 bit A to D",
+    "size": 1,
+    "variable": false
+  },
+  "27": {
+    "syntax": "TCS",
+    "mode": "Transfer 16 bit A to S",
+    "size": 1,
+    "variable": false
+  },
+  "123": {
+    "syntax": "TDC",
+    "mode": "Transfer D to 16 bit A",
+    "size": 1,
+    "variable": false
+  },
+  "59": {
+    "syntax": "TSC",
+    "mode": "Transfer S to 16 bit A",
+    "size": 1,
+    "variable": false
+  },
+  "186": {
+    "syntax": "TSX",
+    "mode": "Transfer S to X",
+    "size": 1,
+    "variable": false
+  },
+  "138": {
+    "syntax": "TXA",
+    "mode": "Transfer X to A",
+    "size": 1,
+    "variable": false
+  },
+  "154": {
+    "syntax": "TXS",
+    "mode": "Transfer X to S",
+    "size": 1,
+    "variable": false
+  },
+  "155": {
+    "syntax": "TXY",
+    "mode": "Transfer X to Y",
+    "size": 1,
+    "variable": false
+  },
+  "152": {
+    "syntax": "TYA",
+    "mode": "Transfer Y to A",
+    "size": 1,
+    "variable": false
+  },
+  "187": {
+    "syntax": "TYX",
+    "mode": "Transfer Y to X",
+    "size": 1,
+    "variable": false
+  },
+  "28": {
+    "syntax": "TRB addr",
+    "mode": "Absolute",
+    "size": 3,
+    "variable": false
+  },
+  "20": {
+    "syntax": "TRB dp",
+    "mode": "Direct Page",
+    "size": 2,
+    "variable": false
+  },
+  "12": {
+    "syntax": "TSB addr",
+    "mode": "Absolute",
+    "size": 3,
+    "variable": false
+  },
+  "4": {
+    "syntax": "TSB dp",
+    "mode": "Direct Page",
+    "size": 2,
+    "variable": false
+  },
+  "203": {
+    "syntax": "WAI",
+    "mode": "Implied",
+    "size": 1,
+    "variable": false
+  },
+  "235": {
+    "syntax": "XBA",
+    "mode": "Implied",
+    "size": 1,
+    "variable": false
+  },
+  "251": {
+    "syntax": "XCE",
+    "mode": "Implied",
+    "size": 1,
+    "variable": false
+  }
+}

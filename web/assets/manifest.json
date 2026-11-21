@@ -1,0 +1,897 @@
+{
+  "romSha256": "2b1ca521975c3010650fd2055be8c6b964ea4eff765ad03198ac71995285fee7",
+  "graphicsCompressionRoutine": "00:9474-00:95FE",
+  "streams": [
+    {
+      "address": "1A8002",
+      "romOffset": 851970,
+      "compressedBytes": 9706,
+      "decodedBytes": 11776,
+      "referenceBytesCompared": 11776,
+      "sha256": "974531f273ae16964e71d449a50264cdc54dda5708c4b296de06a998cca5f9c5",
+      "firstObservedFrame": 53
+    },
+    {
+      "address": "1AA5EE",
+      "romOffset": 861678,
+      "compressedBytes": 730,
+      "decodedBytes": 8192,
+      "referenceBytesCompared": 8192,
+      "sha256": "6d7dab9d03f1d1ca704da79795db46edec9b895031cc92ef15599862899c4276",
+      "firstObservedFrame": 124
+    },
+    {
+      "address": "07E9FE",
+      "romOffset": 256510,
+      "compressedBytes": 2900,
+      "decodedBytes": 5120,
+      "referenceBytesCompared": 5120,
+      "sha256": "6d63e763b57031ebe5b2e393d1b4b0fc4868eacd8a9e37544cf4958a8c36c54a",
+      "firstObservedFrame": 160
+    },
+    {
+      "address": "089014",
+      "romOffset": 266260,
+      "compressedBytes": 522,
+      "decodedBytes": 2048,
+      "referenceBytesCompared": 2048,
+      "sha256": "d8c30caa553aab2fc600a514111e4c606c591790ab6e6dd14611e7b0caf480bf",
+      "firstObservedFrame": 168
+    },
+    {
+      "address": "08921E",
+      "romOffset": 266782,
+      "compressedBytes": 71,
+      "decodedBytes": 512,
+      "referenceBytesCompared": 512,
+      "sha256": "2289152d1d6fc0fbac1fb9e4ec57817d2d5173f093dc6d13a81c23f441085aed",
+      "firstObservedFrame": 171
+    },
+    {
+      "address": "089265",
+      "romOffset": 266853,
+      "compressedBytes": 36,
+      "decodedBytes": 512,
+      "referenceBytesCompared": 512,
+      "sha256": "92948ebe3503d94b08e3c6f56046f1f3115aacd08533087794647274209ed976",
+      "firstObservedFrame": 171
+    },
+    {
+      "address": "1AC08D",
+      "romOffset": 868493,
+      "compressedBytes": 2452,
+      "decodedBytes": 2592,
+      "referenceBytesCompared": 2592,
+      "sha256": "189eac5b52921479de616083bad26307090ff7a61bbfcd62e25a528c604d6ab7",
+      "firstObservedFrame": 711
+    },
+    {
+      "address": "089981",
+      "romOffset": 268673,
+      "compressedBytes": 1978,
+      "decodedBytes": 4048,
+      "referenceBytesCompared": 4048,
+      "sha256": "b4369ddce871cb0bbf0438fa219d314501f991913e481ffc58689590d3f4aad4",
+      "firstObservedFrame": 2421
+    },
+    {
+      "address": "0DA728",
+      "romOffset": 436008,
+      "compressedBytes": 5571,
+      "decodedBytes": 8192,
+      "referenceBytesCompared": 8192,
+      "sha256": "923bcc9219ac1fada7d18d6436e2f7396ceececdfce759c0e2a0139da2c8c3e3",
+      "firstObservedFrame": 2427
+    },
+    {
+      "address": "098000",
+      "romOffset": 294912,
+      "compressedBytes": 6542,
+      "decodedBytes": 8192,
+      "referenceBytesCompared": 8192,
+      "sha256": "66804431a9b5d77d23b4714543140dbc4ebdde1687bd6c6fbbe962626136bfe4",
+      "firstObservedFrame": 2439
+    },
+    {
+      "address": "09998E",
+      "romOffset": 301454,
+      "compressedBytes": 6559,
+      "decodedBytes": 8192,
+      "referenceBytesCompared": 8192,
+      "sha256": "572bec59f48f00b0762b1d1a65136191fc54c92991c8cac3b0985dd9532579da",
+      "firstObservedFrame": 2452
+    },
+    {
+      "address": "09B32D",
+      "romOffset": 308013,
+      "compressedBytes": 6684,
+      "decodedBytes": 8192,
+      "referenceBytesCompared": 8192,
+      "sha256": "c42e60be7e7496ce9a4e79ad52d0de2c941fda5fa7eb920f0ae4974b7488a20e",
+      "firstObservedFrame": 2464
+    },
+    {
+      "address": "09CD49",
+      "romOffset": 314697,
+      "compressedBytes": 6383,
+      "decodedBytes": 8192,
+      "referenceBytesCompared": 8192,
+      "sha256": "4374da5a3d42060d207c67f17df1ddf53bd2631b32b4c31a85bfa144becee362",
+      "firstObservedFrame": 2476
+    },
+    {
+      "address": "0DBCEB",
+      "romOffset": 441579,
+      "compressedBytes": 1555,
+      "decodedBytes": 2048,
+      "referenceBytesCompared": 2048,
+      "sha256": "01638df85eea8d5057e2afa73b43a6db243c152509dd4f0ea9c19966b94cdfde",
+      "firstObservedFrame": 2488
+    },
+    {
+      "address": "0DC2FE",
+      "romOffset": 443134,
+      "compressedBytes": 1550,
+      "decodedBytes": 2048,
+      "referenceBytesCompared": 2048,
+      "sha256": "6bf72eb741b74f87b8afff438cab88d07011c5297d6340b99a379d00a97ca4ba",
+      "firstObservedFrame": 2491
+    },
+    {
+      "address": "0DC90C",
+      "romOffset": 444684,
+      "compressedBytes": 3527,
+      "decodedBytes": 4096,
+      "referenceBytesCompared": 4096,
+      "sha256": "2648c4950e874ad7ea194d36173d12bcf7b8012b4f3a3e597e5e07eba42b0eb3",
+      "firstObservedFrame": 2494
+    },
+    {
+      "address": "07F552",
+      "romOffset": 259410,
+      "compressedBytes": 572,
+      "decodedBytes": 4096,
+      "referenceBytesCompared": 4096,
+      "sha256": "7ea2f75fd5cbffe43e1f889d1789ae256bb3bb2cf86a544894ea094f2f266689",
+      "firstObservedFrame": 808
+    },
+    {
+      "address": "15D80A",
+      "romOffset": 710666,
+      "compressedBytes": 1231,
+      "decodedBytes": 6304,
+      "referenceBytesCompared": 6304,
+      "sha256": "c2d0d642ebdf3b16fa93b09974d1a09629efe20cdb688fe67951a6a8199873b6",
+      "firstObservedFrame": 816
+    },
+    {
+      "address": "06D6A7",
+      "romOffset": 218791,
+      "compressedBytes": 5613,
+      "decodedBytes": 8192,
+      "referenceBytesCompared": 8192,
+      "sha256": "dde02cdb009c8423adc2a3302e15be0ad29c0270b5bd995b6c7fe559834b6ee7",
+      "firstObservedFrame": 832
+    },
+    {
+      "address": "08BC7B",
+      "romOffset": 277627,
+      "compressedBytes": 5591,
+      "decodedBytes": 8192,
+      "referenceBytesCompared": 8192,
+      "sha256": "cb38e4fd4359f3a68eab8875e31d44d03b9a79c99caf30de103fe5a67aff7adc",
+      "firstObservedFrame": 845
+    },
+    {
+      "address": "08D252",
+      "romOffset": 283218,
+      "compressedBytes": 7029,
+      "decodedBytes": 8192,
+      "referenceBytesCompared": 8192,
+      "sha256": "714ced1746c8580664702aaa0604b802f5e3e4b73e42f16340562b9ddf93fabd",
+      "firstObservedFrame": 857
+    },
+    {
+      "address": "17CE4D",
+      "romOffset": 773709,
+      "compressedBytes": 999,
+      "decodedBytes": 1728,
+      "referenceBytesCompared": 1728,
+      "sha256": "7c272a0ed21fe3508325cbe0e9a7d14a39535bd298512a924da18fa2dc5df166",
+      "firstObservedFrame": 870
+    },
+    {
+      "address": "06EF5C",
+      "romOffset": 225116,
+      "compressedBytes": 552,
+      "decodedBytes": 2048,
+      "referenceBytesCompared": 2048,
+      "sha256": "b7604afc98721d2e9ddfac99fa058eabc1c33f9c7a6474514c921dfb18f77d3f",
+      "firstObservedFrame": 873
+    },
+    {
+      "address": "06EC94",
+      "romOffset": 224404,
+      "compressedBytes": 712,
+      "decodedBytes": 2048,
+      "referenceBytesCompared": 2048,
+      "sha256": "b06ce2bcd20920f72d97d313967e1c73b37f3040d4ca75a14fe450a4b4533ede",
+      "firstObservedFrame": 875
+    },
+    {
+      "address": "06F184",
+      "romOffset": 225668,
+      "compressedBytes": 399,
+      "decodedBytes": 2048,
+      "referenceBytesCompared": 2048,
+      "sha256": "b8c29d301fcd2bd4e055680139b3ddbefe2962902e5ac5db16ef712b86dd77b3",
+      "firstObservedFrame": 878
+    },
+    {
+      "address": "17B953",
+      "romOffset": 768339,
+      "compressedBytes": 5370,
+      "decodedBytes": 8192,
+      "referenceBytesCompared": 8192,
+      "sha256": "6423f3e26027070f1a5bd4d93265128931431b54a1c1b5c37ca59913db6f8dcd",
+      "firstObservedFrame": 881
+    },
+    {
+      "address": "089289",
+      "romOffset": 266889,
+      "compressedBytes": 1784,
+      "decodedBytes": 5249,
+      "referenceBytesCompared": 5249,
+      "sha256": "f26e36a660900d13c80e12816fea451c52509751369420470afd887e7702c0d8",
+      "firstObservedFrame": 1860
+    },
+    {
+      "address": "11E958",
+      "romOffset": 584024,
+      "compressedBytes": 1376,
+      "decodedBytes": 4096,
+      "referenceBytesCompared": 4096,
+      "sha256": "ae2914ce71e076a02c20c2833f052ebe1489c35ace8b11c42ab605c09a3b8181",
+      "firstObservedFrame": 1868
+    },
+    {
+      "address": "06FB2B",
+      "romOffset": 228139,
+      "compressedBytes": 1096,
+      "decodedBytes": 16384,
+      "referenceBytesCompared": 16384,
+      "sha256": "ba72f44b6a456e03f9fcc7f1edf24c8d72fc8cbb13478a4911bd0a59528b60ba",
+      "firstObservedFrame": 1872
+    },
+    {
+      "address": "0B8000",
+      "romOffset": 360448,
+      "compressedBytes": 5023,
+      "decodedBytes": 8192,
+      "referenceBytesCompared": 8192,
+      "sha256": "b068de858451dc56d317d0fb38b443b130a3f7c6e2fe37d8c594713fbbb92719",
+      "firstObservedFrame": 2169
+    },
+    {
+      "address": "0B939F",
+      "romOffset": 365471,
+      "compressedBytes": 5782,
+      "decodedBytes": 8192,
+      "referenceBytesCompared": 8192,
+      "sha256": "b417999a5599a93366c97de62cfd3aca1ae9ed5181353deae57a247d9e596507",
+      "firstObservedFrame": 2187
+    },
+    {
+      "address": "0BAA35",
+      "romOffset": 371253,
+      "compressedBytes": 4512,
+      "decodedBytes": 8192,
+      "referenceBytesCompared": 8192,
+      "sha256": "aedd0f40be7caa85152c83a8873ad0cdd9d198359c15d1322df261962a06a7b5",
+      "firstObservedFrame": 2206
+    },
+    {
+      "address": "0BBBD5",
+      "romOffset": 375765,
+      "compressedBytes": 2450,
+      "decodedBytes": 8192,
+      "referenceBytesCompared": 8192,
+      "sha256": "9e7ae038dbab2d56c8e31c0771267c907ac3d4f7688638fdcde287be49d4dcfe",
+      "firstObservedFrame": 2225
+    },
+    {
+      "address": "0BC567",
+      "romOffset": 378215,
+      "compressedBytes": 4519,
+      "decodedBytes": 8192,
+      "referenceBytesCompared": 8192,
+      "sha256": "9bd80e4aaea30f6cf030273a9cf8a327258adea4e33e25469cda7d30e8900bdd",
+      "firstObservedFrame": 2240
+    },
+    {
+      "address": "0BD70E",
+      "romOffset": 382734,
+      "compressedBytes": 3836,
+      "decodedBytes": 8192,
+      "referenceBytesCompared": 8192,
+      "sha256": "34c5ddf4c35dedf6c93cd66489e05cae37b6fcd6a1762e3211cd3d3f65145e08",
+      "firstObservedFrame": 2258
+    },
+    {
+      "address": "11CDEA",
+      "romOffset": 577002,
+      "compressedBytes": 4309,
+      "decodedBytes": 8192,
+      "referenceBytesCompared": 8192,
+      "sha256": "7fc092467ad8a2ef20d13707673ee54432dfd2c79a0d1576073639cd0d805bef",
+      "firstObservedFrame": 2276
+    },
+    {
+      "address": "11DEBF",
+      "romOffset": 581311,
+      "compressedBytes": 2713,
+      "decodedBytes": 4800,
+      "referenceBytesCompared": 4800,
+      "sha256": "e098f0b469a8a75ca72241c6c68b92d43e8d7c3faffcdd5efa99e5faed76ef94",
+      "firstObservedFrame": 2294
+    },
+    {
+      "address": "0AB064",
+      "romOffset": 340068,
+      "compressedBytes": 4311,
+      "decodedBytes": 8192,
+      "referenceBytesCompared": 8192,
+      "sha256": "578b7f6151376397ac638e57ae63339cade668a0c6c5e6ba70149f47f266e60f",
+      "firstObservedFrame": 2305
+    },
+    {
+      "address": "0AD871",
+      "romOffset": 350321,
+      "compressedBytes": 1532,
+      "decodedBytes": 4096,
+      "referenceBytesCompared": 4096,
+      "sha256": "2d7795d80d468cb23a87c7dbbaebd323225eb2b21771cdf73bc6d7f4912f6fa4",
+      "firstObservedFrame": 2325
+    },
+    {
+      "address": "0AC13B",
+      "romOffset": 344379,
+      "compressedBytes": 3201,
+      "decodedBytes": 6816,
+      "referenceBytesCompared": 6816,
+      "sha256": "f22f258b159053495da292fe83bd0305710e746e2bfc46190b0756dbc9c0a358",
+      "firstObservedFrame": 2335
+    },
+    {
+      "address": "0ACDBC",
+      "romOffset": 347580,
+      "compressedBytes": 2741,
+      "decodedBytes": 5376,
+      "referenceBytesCompared": 5376,
+      "sha256": "18f2793df2797976118340468582a07aeb4fec9bf39f9b84dac617c5575cd8fc",
+      "firstObservedFrame": 2351
+    },
+    {
+      "address": "0ADE6D",
+      "romOffset": 351853,
+      "compressedBytes": 454,
+      "decodedBytes": 2048,
+      "referenceBytesCompared": 2048,
+      "sha256": "8fe0606c5a61ee94c1ba4cdebf6fec966330619ba369fde8e075c0c888775cfa",
+      "firstObservedFrame": 2364
+    },
+    {
+      "address": "1CB13C",
+      "romOffset": 930108,
+      "compressedBytes": 3241,
+      "decodedBytes": 3498,
+      "referenceBytesCompared": 3498,
+      "sha256": "31c126c568b330f0e5da3d08259feca708700a42c8953c532507a9d71b72f341",
+      "firstObservedFrame": 2390
+    }
+  ],
+  "audio": [
+    {
+      "capture": "stage1-entry",
+      "directory": 20480,
+      "entries": [
+        {
+          "id": 0,
+          "aramStart": 20736,
+          "aramLoop": 20799,
+          "looped": true,
+          "blocks": 14,
+          "observedOnVoice": false
+        },
+        {
+          "id": 1,
+          "aramStart": 20862,
+          "aramLoop": 20943,
+          "looped": true,
+          "blocks": 16,
+          "observedOnVoice": true
+        },
+        {
+          "id": 2,
+          "aramStart": 21006,
+          "aramLoop": 21078,
+          "looped": true,
+          "blocks": 12,
+          "observedOnVoice": true
+        },
+        {
+          "id": 3,
+          "aramStart": 21114,
+          "aramLoop": 21186,
+          "looped": true,
+          "blocks": 12,
+          "observedOnVoice": false
+        },
+        {
+          "id": 4,
+          "aramStart": 21222,
+          "aramLoop": 21294,
+          "looped": true,
+          "blocks": 12,
+          "observedOnVoice": false
+        },
+        {
+          "id": 5,
+          "aramStart": 21330,
+          "aramLoop": 21402,
+          "looped": true,
+          "blocks": 13,
+          "observedOnVoice": false
+        },
+        {
+          "id": 6,
+          "aramStart": 21447,
+          "aramLoop": 21474,
+          "looped": true,
+          "blocks": 4,
+          "observedOnVoice": false
+        },
+        {
+          "id": 7,
+          "aramStart": 21483,
+          "aramLoop": 21510,
+          "looped": true,
+          "blocks": 6,
+          "observedOnVoice": false
+        },
+        {
+          "id": 8,
+          "aramStart": 21537,
+          "aramLoop": 21564,
+          "looped": true,
+          "blocks": 6,
+          "observedOnVoice": true
+        },
+        {
+          "id": 9,
+          "aramStart": 21591,
+          "aramLoop": 21618,
+          "looped": true,
+          "blocks": 14,
+          "observedOnVoice": false
+        },
+        {
+          "id": 10,
+          "aramStart": 21717,
+          "aramLoop": 21744,
+          "looped": true,
+          "blocks": 6,
+          "observedOnVoice": false
+        },
+        {
+          "id": 11,
+          "aramStart": 21771,
+          "aramLoop": 21798,
+          "looped": true,
+          "blocks": 173,
+          "observedOnVoice": false
+        },
+        {
+          "id": 12,
+          "aramStart": 23328,
+          "aramLoop": 23328,
+          "looped": false,
+          "blocks": 313,
+          "observedOnVoice": false
+        },
+        {
+          "id": 13,
+          "aramStart": 26145,
+          "aramLoop": 27774,
+          "looped": true,
+          "blocks": 429,
+          "observedOnVoice": false
+        },
+        {
+          "id": 14,
+          "aramStart": 30006,
+          "aramLoop": 30006,
+          "looped": false,
+          "blocks": 263,
+          "observedOnVoice": false
+        },
+        {
+          "id": 15,
+          "aramStart": 32373,
+          "aramLoop": 32373,
+          "looped": false,
+          "blocks": 426,
+          "observedOnVoice": true
+        },
+        {
+          "id": 16,
+          "aramStart": 36207,
+          "aramLoop": 38088,
+          "looped": true,
+          "blocks": 211,
+          "observedOnVoice": true
+        },
+        {
+          "id": 17,
+          "aramStart": 38106,
+          "aramLoop": 40338,
+          "looped": true,
+          "blocks": 440,
+          "observedOnVoice": true
+        },
+        {
+          "id": 18,
+          "aramStart": 42066,
+          "aramLoop": 44325,
+          "looped": true,
+          "blocks": 261,
+          "observedOnVoice": false
+        },
+        {
+          "id": 19,
+          "aramStart": 44415,
+          "aramLoop": 45036,
+          "looped": true,
+          "blocks": 87,
+          "observedOnVoice": false
+        },
+        {
+          "id": 20,
+          "aramStart": 45198,
+          "aramLoop": 45198,
+          "looped": false,
+          "blocks": 336,
+          "observedOnVoice": false
+        },
+        {
+          "id": 21,
+          "aramStart": 48222,
+          "aramLoop": 48285,
+          "looped": true,
+          "blocks": 14,
+          "observedOnVoice": false
+        },
+        {
+          "id": 22,
+          "aramStart": 48348,
+          "aramLoop": 48348,
+          "looped": false,
+          "blocks": 313,
+          "observedOnVoice": true
+        },
+        {
+          "id": 23,
+          "aramStart": 51165,
+          "aramLoop": 51165,
+          "looped": false,
+          "blocks": 207,
+          "observedOnVoice": false
+        },
+        {
+          "id": 85,
+          "aramStart": 49419,
+          "aramLoop": 64527,
+          "looped": false,
+          "blocks": 194,
+          "observedOnVoice": false
+        },
+        {
+          "id": 93,
+          "aramStart": 50113,
+          "aramLoop": 64017,
+          "looped": false,
+          "blocks": 2,
+          "observedOnVoice": false
+        },
+        {
+          "id": 105,
+          "aramStart": 25380,
+          "aramLoop": 64255,
+          "looped": false,
+          "blocks": 85,
+          "observedOnVoice": false
+        },
+        {
+          "id": 147,
+          "aramStart": 35549,
+          "aramLoop": 60225,
+          "looped": false,
+          "blocks": 3,
+          "observedOnVoice": false
+        },
+        {
+          "id": 174,
+          "aramStart": 35379,
+          "aramLoop": 65380,
+          "looped": false,
+          "blocks": 92,
+          "observedOnVoice": false
+        },
+        {
+          "id": 197,
+          "aramStart": 47802,
+          "aramLoop": 52411,
+          "looped": false,
+          "blocks": 2,
+          "observedOnVoice": false
+        },
+        {
+          "id": 219,
+          "aramStart": 39454,
+          "aramLoop": 62959,
+          "looped": false,
+          "blocks": 4,
+          "observedOnVoice": false
+        }
+      ],
+      "status": "candidate sample extraction; songs and playback pitches not reconstructed"
+    },
+    {
+      "capture": "level-loaded",
+      "directory": 20480,
+      "entries": [
+        {
+          "id": 0,
+          "aramStart": 20736,
+          "aramLoop": 20799,
+          "looped": true,
+          "blocks": 14,
+          "observedOnVoice": false
+        },
+        {
+          "id": 1,
+          "aramStart": 20862,
+          "aramLoop": 20943,
+          "looped": true,
+          "blocks": 16,
+          "observedOnVoice": true
+        },
+        {
+          "id": 2,
+          "aramStart": 21006,
+          "aramLoop": 21078,
+          "looped": true,
+          "blocks": 12,
+          "observedOnVoice": false
+        },
+        {
+          "id": 3,
+          "aramStart": 21114,
+          "aramLoop": 21186,
+          "looped": true,
+          "blocks": 12,
+          "observedOnVoice": false
+        },
+        {
+          "id": 4,
+          "aramStart": 21222,
+          "aramLoop": 21294,
+          "looped": true,
+          "blocks": 12,
+          "observedOnVoice": false
+        },
+        {
+          "id": 5,
+          "aramStart": 21330,
+          "aramLoop": 21402,
+          "looped": true,
+          "blocks": 13,
+          "observedOnVoice": false
+        },
+        {
+          "id": 6,
+          "aramStart": 21447,
+          "aramLoop": 21474,
+          "looped": true,
+          "blocks": 4,
+          "observedOnVoice": false
+        },
+        {
+          "id": 7,
+          "aramStart": 21483,
+          "aramLoop": 21510,
+          "looped": true,
+          "blocks": 6,
+          "observedOnVoice": false
+        },
+        {
+          "id": 8,
+          "aramStart": 21537,
+          "aramLoop": 21564,
+          "looped": true,
+          "blocks": 6,
+          "observedOnVoice": false
+        },
+        {
+          "id": 9,
+          "aramStart": 21591,
+          "aramLoop": 21618,
+          "looped": true,
+          "blocks": 14,
+          "observedOnVoice": false
+        },
+        {
+          "id": 10,
+          "aramStart": 21717,
+          "aramLoop": 21744,
+          "looped": true,
+          "blocks": 6,
+          "observedOnVoice": false
+        },
+        {
+          "id": 11,
+          "aramStart": 21771,
+          "aramLoop": 21798,
+          "looped": true,
+          "blocks": 173,
+          "observedOnVoice": true
+        },
+        {
+          "id": 12,
+          "aramStart": 23328,
+          "aramLoop": 23328,
+          "looped": false,
+          "blocks": 313,
+          "observedOnVoice": false
+        },
+        {
+          "id": 13,
+          "aramStart": 26145,
+          "aramLoop": 27774,
+          "looped": true,
+          "blocks": 429,
+          "observedOnVoice": true
+        },
+        {
+          "id": 14,
+          "aramStart": 30006,
+          "aramLoop": 30006,
+          "looped": false,
+          "blocks": 263,
+          "observedOnVoice": false
+        },
+        {
+          "id": 15,
+          "aramStart": 32373,
+          "aramLoop": 32373,
+          "looped": false,
+          "blocks": 426,
+          "observedOnVoice": true
+        },
+        {
+          "id": 16,
+          "aramStart": 36207,
+          "aramLoop": 38088,
+          "looped": true,
+          "blocks": 211,
+          "observedOnVoice": false
+        },
+        {
+          "id": 17,
+          "aramStart": 38106,
+          "aramLoop": 40338,
+          "looped": true,
+          "blocks": 440,
+          "observedOnVoice": false
+        },
+        {
+          "id": 18,
+          "aramStart": 42066,
+          "aramLoop": 44325,
+          "looped": true,
+          "blocks": 261,
+          "observedOnVoice": true
+        },
+        {
+          "id": 19,
+          "aramStart": 44415,
+          "aramLoop": 45036,
+          "looped": true,
+          "blocks": 87,
+          "observedOnVoice": false
+        },
+        {
+          "id": 20,
+          "aramStart": 45198,
+          "aramLoop": 45198,
+          "looped": false,
+          "blocks": 124,
+          "observedOnVoice": false
+        },
+        {
+          "id": 21,
+          "aramStart": 46314,
+          "aramLoop": 47538,
+          "looped": true,
+          "blocks": 161,
+          "observedOnVoice": false
+        },
+        {
+          "id": 22,
+          "aramStart": 47763,
+          "aramLoop": 47763,
+          "looped": false,
+          "blocks": 313,
+          "observedOnVoice": false
+        },
+        {
+          "id": 23,
+          "aramStart": 50580,
+          "aramLoop": 54612,
+          "looped": true,
+          "blocks": 462,
+          "observedOnVoice": true
+        },
+        {
+          "id": 85,
+          "aramStart": 49419,
+          "aramLoop": 64527,
+          "looped": false,
+          "blocks": 129,
+          "observedOnVoice": false
+        },
+        {
+          "id": 105,
+          "aramStart": 25380,
+          "aramLoop": 64255,
+          "looped": false,
+          "blocks": 85,
+          "observedOnVoice": false
+        },
+        {
+          "id": 147,
+          "aramStart": 35549,
+          "aramLoop": 60225,
+          "looped": false,
+          "blocks": 3,
+          "observedOnVoice": false
+        },
+        {
+          "id": 174,
+          "aramStart": 35379,
+          "aramLoop": 65380,
+          "looped": false,
+          "blocks": 92,
+          "observedOnVoice": false
+        },
+        {
+          "id": 197,
+          "aramStart": 47802,
+          "aramLoop": 52411,
+          "looped": false,
+          "blocks": 2,
+          "observedOnVoice": false
+        },
+        {
+          "id": 219,
+          "aramStart": 39454,
+          "aramLoop": 62959,
+          "looped": false,
+          "blocks": 4,
+          "observedOnVoice": false
+        }
+      ],
+      "status": "candidate sample extraction; songs and playback pitches not reconstructed"
+    }
+  ]
+}
