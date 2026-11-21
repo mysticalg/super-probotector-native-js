@@ -96,6 +96,17 @@ def main():
     atlas.save(assets/'player-frames.png');(assets/'player-frames.json').write_text(json.dumps(frames))
     captured_background(a.captures/'stage1-entry',rom).save(assets/'title.png')
     captured_background(cap,rom).crop((0,0,256,24)).save(assets/'hud.png')
-    print('Built two stage maps from ROM metatile data and',len(frames),'player frame definitions.')
+    # Standard weapon: frame-by-frame SNES Y capture shows OAM tile $00C
+    # in sprite palette 7. Use the verified pad-2 capture for VRAM and CGRAM.
+    fire=a.captures/'pad-2';fp=json.loads((fire/'ppu.json').read_text());fv=(fire/'vram.bin').read_bytes();
+    # CGRAM is 256 SNES BGR555 entries; sprite palette 7 is entries 240-255.
+    raw=(fire/'cgram.bin').read_bytes();spal=palette(raw)[240:256];base=fp['sprAdr1']*2+12*32
+    shot=Image.new('RGBA',(8,8))
+    for y in range(8):
+        for x in range(8):
+            v=sum(((fv[base+(bit//2)*16+y*2+(bit&1)]>>(7-x))&1)<<bit for bit in range(4))
+            if v:shot.putpixel((x,y),spal[v])
+    shot.save(assets/'projectile-standard.png')
+    print('Built two Stage 1 maps,',len(frames),'player frames, and the standard projectile.')
 
 if __name__=='__main__':main()
