@@ -4,7 +4,7 @@ ctx.imageSmoothingEnabled = false;
 
 const imageNames = [
   'title', 'stage1-background', 'stage1-foreground', 'player-frames',
-  'projectile-standard', 'stage2-mode7-map', 'stage2-start-marker'
+  'projectile-standard', 'stage2-mode7-map', 'stage2-start-marker', 'stage3-entry'
 ];
 const images = Object.fromEntries(imageNames.map(name => {
   const image = new Image();
@@ -48,7 +48,7 @@ onkeydown = event => {
 };
 onkeyup = event => keys.delete(event.key.toLowerCase());
 
-let mode = 'title';
+let mode = new URLSearchParams(location.search).get('preview') === 'stage3-entry' ? 'stage3-preview' : 'title';
 let tick = 0;
 let scroll = 0;
 let frame = 0;
@@ -163,6 +163,7 @@ function drawPlayerAt(x, y) {
 }
 function update() {
   tick++;
+  if (mode === 'stage3-preview') return;
   const pressed = key => keys.has(key) && !previous.has(key);
 
   if (mode === 'title') {
@@ -361,6 +362,10 @@ function drawStage2() {
   ctx.fillText(`1P SCORE ${String(score).padStart(6, '0')} REST ${lives} STAGE 2`, 7, 10);
 }
 function draw() {
+  if (mode === 'stage3-preview') {
+    if (images['stage3-entry'].naturalWidth) ctx.drawImage(images['stage3-entry'], 0, 0);
+    return;
+  }
   if (mode === 'title') { drawTitle(); return; }
   if (mode === 'pause') {
     ctx.fillStyle = '#060812'; ctx.fillRect(0, 0, 256, 224); ctx.fillStyle = '#fff'; ctx.font = '12px monospace'; ctx.fillText('PAUSED', 103, 105); ctx.font = '8px monospace'; ctx.fillText('ENTER RESUME  ESC CONTINUE', 67, 121); return;
