@@ -13,6 +13,8 @@ const images = Object.fromEntries(imageNames.map(name => {
 }));
 let playerFrameMeta = {};
 let stage2Data = null;
+let weaponTables = null;
+fetch('assets/weapon-tables.json').then(r => r.json()).then(v => weaponTables = v);
 fetch('assets/player-frames.json').then(r => r.json()).then(v => playerFrameMeta = v);
 fetch('assets/stage2-mode7.json').then(r => r.json()).then(v => {
   stage2Data = v;
@@ -235,7 +237,7 @@ function update() {
     // Verified SNES Y shot: OAM tile $00C, muzzle +/-27,-30, 7.5 px/frame, 3-frame cadence.
     shots.push({ x: player.x + player.face * 27, y: player.y - 30, dx: player.face * (weapon === 0 ? 7.5 : 4.5), dy: angle * (weapon === 0 ? 7.5 : 4.5), life: 0 });
     if (weapon === 1) for (const spread of [-0.3, 0.3]) shots.push({ x: player.x + player.face * 9, y: player.y - 9, dx: player.face * 4.5, dy: spread * 4.5, life: 0 });
-    fireCooldown = weapon === 0 ? 3 : weapon === 2 ? 4 : 9;
+    fireCooldown = weapon === 0 ? (weaponTables?.cadenceFrames[0] ?? 3) : weapon === 2 ? 4 : 9;
   }
   for (const shot of shots) { shot.x += shot.dx; shot.y += shot.dy; shot.life++; }
   shots = shots.filter(shot => shot.x > -5 && shot.x < 261 && shot.y > -5 && shot.y < 230);

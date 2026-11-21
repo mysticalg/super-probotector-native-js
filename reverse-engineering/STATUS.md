@@ -60,3 +60,5 @@ The incomplete milestone is public at `https://github.com/mysticalg/super-probot
 ## Additional input and projectile routine evidence
 
 The European trace at $00:8B2E reads $4218,X, stores held controller words at $20,X and newly pressed bits at $28,X. Holding Y produces $4000 in $20. The firing-only execution path reaches $00:D642 (LDA $22,X; BIT $88), weapon selection through $1D84,X and $05:A021,Y, then $00:D6D1. The base spawn writes $3E0C at object offset $14 and loads velocity components from $05:8E33/$8D93/$8E13/$8D73. $00:E153-$00:E169 integrates the fractional and integer position words. Further table semantics remain under investigation.
+
+The Stage 2 deployment for 1290b12 succeeded; public game.js contains renderMode7 and the Stage 2 config returns HTTP 200. Extracted weapon cadence words at $05:A021 are 3,4,5,4,1,1. The browser base weapon now reads entry zero from weapon-tables.json. Raw velocity words from the four spawn lookups are preserved there for analysis; direction-index mapping is unresolved and these arrays are not yet used to drive aiming. Prototype alternate weapon numbers have not been equated with ROM IDs.
