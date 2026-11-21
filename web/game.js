@@ -91,10 +91,10 @@ function start() {
 }
 function startStage2() {
   const point = stage2Data?.startPoints?.[stage2Choice];
-  stage2World = point ? { x: point.world[0], y: point.world[1] } : { x: 862, y: 62 };
+  stage2World = stage2Choice === 1 ? { x: 896, y: 160 } : point ? { x: point.world[0], y: point.world[1] } : { x: 896, y: 160 };
   stage = 2;
   mode = 'stage2';
-  player = { x: 128, y: 112, vx: 0, vy: 0, ground: true, face: 1, invuln: 0, aim: 0 };
+  player = { x: 128, y: 160, vx: 0, vy: 0, ground: true, face: 1, invuln: 0, aim: 0 };
   stage2Shots = [];
   fireCooldown = 0;
   tick = 0;
@@ -133,8 +133,8 @@ function renderMode7(config, camera = null) {
   let offset = config.screenYOffset || 0;
   if (camera) {
     A = camera.A; B = camera.B; C = camera.C; D = camera.D;
-    X = camera.x - (A * 128 + B * 112) / 256;
-    Y = camera.y - (C * 128 + D * 112) / 256;
+    X = camera.x - (A * 128 + B * 160) / 256;
+    Y = camera.y - (C * 128 + D * 160) / 256;
     H = X; V = Y; offset = 0;
   }
   const clippedH = mode7Clip(H - X), clippedV = mode7Clip(V - Y);
@@ -210,7 +210,7 @@ function update() {
   const dx = (keys.has('arrowright') ? 1 : 0) - (keys.has('arrowleft') ? 1 : 0);
   const dy = (keys.has('arrowdown') ? 1 : 0) - (keys.has('arrowup') ? 1 : 0);
   if (mode === 'stage2') {
-    const speed = 1.5; // movement speed still under reference measurement for Mode 7 stages
+    const speed = 2; // Natural right/up runs move 24 world pixels per 12 frames.
     stage2World.x = Math.max(8, Math.min(1016, stage2World.x + dx * speed));
     stage2World.y = Math.max(8, Math.min(1016, stage2World.y + dy * speed));
     if (dx) player.face = dx;
@@ -353,10 +353,10 @@ function drawStage2() {
   if (!stage2Data) return;
   renderMode7(stage2Data, { A: 256, B: 0, C: 0, D: 256, x: stage2World.x, y: stage2World.y });
   for (const shot of stage2Shots) {
-    const x = 128 + shot.x - stage2World.x, y = 112 + shot.y - stage2World.y;
+    const x = 128 + shot.x - stage2World.x, y = 160 + shot.y - stage2World.y;
     if (images['projectile-standard'].complete) ctx.drawImage(images['projectile-standard'], x - 4, y - 4, 8, 8);
   }
-  drawPlayerAt(128, 112);
+  drawPlayerAt(128, 160);
   ctx.fillStyle = '#dce4ff'; ctx.font = '8px monospace';
   ctx.fillText(`1P SCORE ${String(score).padStart(6, '0')} REST ${lives} STAGE 2`, 7, 10);
 }
