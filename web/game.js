@@ -68,6 +68,15 @@ let stage2Choice = 1;
 let stage2World = { x: 0, y: 0 };
 let stage2Shots = [];
 
+function baseVelocity(face, aim, moving) {
+  // Confirmed spawn offsets: up=0, up/right=16, right=32, left=96.
+  const offset = aim < 0 ? (moving && face > 0 ? 16 : 0) : face > 0 ? 32 : 96;
+  const t = weaponTables?.velocityWords;
+  if (!t) return [face * 7.4, 0];
+  const i = offset / 2;
+  const fixed = (integer, fraction) => (integer >= 32768 ? integer - 65536 : integer) + fraction / 65536;
+  return [fixed(t['8D93'][i], t['8E33'][i]), fixed(t['8D73'][i], t['8E13'][i])];
+}
 function start() {
   mode = 'play';
   scroll = 0;
@@ -235,7 +244,8 @@ function update() {
   if ((keys.has('z') || keys.has('b')) && fireCooldown === 0) {
     const angle = player.aim < 0 ? -0.42 : player.aim > 0 ? 0.42 : 0;
     // Verified SNES Y shot: OAM tile $00C, muzzle +/-27,-30, 7.5 px/frame, 3-frame cadence.
-    shots.push({ x: player.x + player.face * 27, y: player.y - 30, dx: player.face * (weapon === 0 ? 7.5 : 4.5), dy: angle * (weapon === 0 ? 7.5 : 4.5), life: 0 });
+    const velocity = weapon === 0 ? baseVelocity(player.face, player.aim, dx !== 0) : [player.face * 4.5, angle * 4.5];
+    shots.push({ x: player.x + player.face * 27, y: player.y - 30, dx: velocity[0], dy: velocity[1], life: 0 });
     if (weapon === 1) for (const spread of [-0.3, 0.3]) shots.push({ x: player.x + player.face * 9, y: player.y - 9, dx: player.face * 4.5, dy: spread * 4.5, life: 0 });
     fireCooldown = weapon === 0 ? (weaponTables?.cadenceFrames[0] ?? 3) : weapon === 2 ? 4 : 9;
   }
