@@ -1,0 +1,424 @@
+[
+  {
+    "rom": "1A8002",
+    "length": 11776,
+    "verifiedPrefix": 11776,
+    "exactCaptureMatches": []
+  },
+  {
+    "rom": "1AA5EE",
+    "length": 8192,
+    "verifiedPrefix": 8192,
+    "exactCaptureMatches": []
+  },
+  {
+    "rom": "07E9FE",
+    "length": 5120,
+    "verifiedPrefix": 5120,
+    "exactCaptureMatches": []
+  },
+  {
+    "rom": "089014",
+    "length": 2048,
+    "verifiedPrefix": 2048,
+    "exactCaptureMatches": []
+  },
+  {
+    "rom": "08921E",
+    "length": 512,
+    "verifiedPrefix": 512,
+    "exactCaptureMatches": []
+  },
+  {
+    "rom": "089265",
+    "length": 512,
+    "verifiedPrefix": 512,
+    "exactCaptureMatches": []
+  },
+  {
+    "rom": "1AC08D",
+    "length": 2592,
+    "verifiedPrefix": 2592,
+    "exactCaptureMatches": []
+  },
+  {
+    "rom": "089981",
+    "length": 4048,
+    "verifiedPrefix": 4048,
+    "exactCaptureMatches": [
+      [
+        "VRAM",
+        "0xa000"
+      ]
+    ]
+  },
+  {
+    "rom": "0DA728",
+    "length": 8192,
+    "verifiedPrefix": 8192,
+    "exactCaptureMatches": []
+  },
+  {
+    "rom": "098000",
+    "length": 8192,
+    "verifiedPrefix": 8192,
+    "exactCaptureMatches": []
+  },
+  {
+    "rom": "09998E",
+    "length": 8192,
+    "verifiedPrefix": 8192,
+    "exactCaptureMatches": []
+  },
+  {
+    "rom": "09B32D",
+    "length": 8192,
+    "verifiedPrefix": 8192,
+    "exactCaptureMatches": []
+  },
+  {
+    "rom": "09CD49",
+    "length": 8192,
+    "verifiedPrefix": 8192,
+    "exactCaptureMatches": []
+  },
+  {
+    "rom": "0DBCEB",
+    "length": 2048,
+    "verifiedPrefix": 2048,
+    "exactCaptureMatches": []
+  },
+  {
+    "rom": "0DC2FE",
+    "length": 2048,
+    "verifiedPrefix": 2048,
+    "exactCaptureMatches": [
+      [
+        "VRAM",
+        "0xe800"
+      ]
+    ]
+  },
+  {
+    "rom": "0DC90C",
+    "length": 4096,
+    "verifiedPrefix": 4096,
+    "exactCaptureMatches": []
+  },
+  {
+    "rom": "07F552",
+    "length": 4096,
+    "verifiedPrefix": 4096,
+    "exactCaptureMatches": []
+  },
+  {
+    "rom": "15D80A",
+    "length": 6304,
+    "verifiedPrefix": 6304,
+    "exactCaptureMatches": []
+  },
+  {
+    "rom": "06D6A7",
+    "length": 8192,
+    "verifiedPrefix": 8192,
+    "exactCaptureMatches": []
+  },
+  {
+    "rom": "08BC7B",
+    "length": 8192,
+    "verifiedPrefix": 8192,
+    "exactCaptureMatches": []
+  },
+  {
+    "rom": "08D252",
+    "length": 8192,
+    "verifiedPrefix": 8192,
+    "exactCaptureMatches": []
+  },
+  {
+    "rom": "17CE4D",
+    "length": 1728,
+    "verifiedPrefix": 1728,
+    "exactCaptureMatches": []
+  },
+  {
+    "rom": "06EF5C",
+    "length": 2048,
+    "verifiedPrefix": 2048,
+    "exactCaptureMatches": []
+  },
+  {
+    "rom": "06EC94",
+    "length": 2048,
+    "verifiedPrefix": 2048,
+    "exactCaptureMatches": []
+  },
+  {
+    "rom": "06F184",
+    "length": 2048,
+    "verifiedPrefix": 2048,
+    "exactCaptureMatches": []
+  },
+  {
+    "rom": "17B953",
+    "length": 8192,
+    "verifiedPrefix": 8192,
+    "exactCaptureMatches": []
+  },
+  {
+    "rom": "089289",
+    "length": 5249,
+    "verifiedPrefix": 5249,
+    "exactCaptureMatches": []
+  },
+  {
+    "rom": "11E958",
+    "length": 4096,
+    "verifiedPrefix": 4096,
+    "exactCaptureMatches": []
+  },
+  {
+    "rom": "06FB2B",
+    "length": 16384,
+    "verifiedPrefix": 16384,
+    "exactCaptureMatches": []
+  },
+  {
+    "rom": "0B8000",
+    "length": 8192,
+    "verifiedPrefix": 8192,
+    "exactCaptureMatches": [
+      [
+        "WRAM",
+        "0x10000"
+      ]
+    ]
+  },
+  {
+    "rom": "0B939F",
+    "length": 8192,
+    "verifiedPrefix": 8192,
+    "exactCaptureMatches": [
+      [
+        "WRAM",
+        "0x12000"
+      ]
+    ]
+  },
+  {
+    "rom": "0BAA35",
+    "length": 8192,
+    "verifiedPrefix": 8192,
+    "exactCaptureMatches": [
+      [
+        "WRAM",
+        "0x14000"
+      ]
+    ]
+  },
+  {
+    "rom": "0BBBD5",
+    "length": 8192,
+    "verifiedPrefix": 8192,
+    "exactCaptureMatches": [
+      [
+        "WRAM",
+        "0x16000"
+      ]
+    ]
+  },
+  {
+    "rom": "0BC567",
+    "length": 8192,
+    "verifiedPrefix": 8192,
+    "exactCaptureMatches": [
+      [
+        "WRAM",
+        "0x18000"
+      ]
+    ]
+  },
+  {
+    "rom": "0BD70E",
+    "length": 8192,
+    "verifiedPrefix": 8192,
+    "exactCaptureMatches": [
+      [
+        "WRAM",
+        "0x1a000"
+      ]
+    ]
+  },
+  {
+    "rom": "11CDEA",
+    "length": 8192,
+    "verifiedPrefix": 8192,
+    "exactCaptureMatches": [
+      [
+        "WRAM",
+        "0x1c000"
+      ]
+    ]
+  },
+  {
+    "rom": "11DEBF",
+    "length": 4800,
+    "verifiedPrefix": 4800,
+    "exactCaptureMatches": [
+      [
+        "WRAM",
+        "0x1e000"
+      ]
+    ]
+  },
+  {
+    "rom": "0D8CC4",
+    "length": 8192,
+    "verifiedPrefix": 8192,
+    "exactCaptureMatches": [
+      [
+        "WRAM",
+        "0x5000"
+      ]
+    ]
+  },
+  {
+    "rom": "0EF59E",
+    "length": 4096,
+    "verifiedPrefix": 4096,
+    "exactCaptureMatches": [
+      [
+        "WRAM",
+        "0x9000"
+      ]
+    ]
+  },
+  {
+    "rom": "0D8000",
+    "length": 8192,
+    "verifiedPrefix": 8192,
+    "exactCaptureMatches": [
+      [
+        "WRAM",
+        "0xb000"
+      ]
+    ]
+  },
+  {
+    "rom": "0D9C9E",
+    "length": 4704,
+    "verifiedPrefix": 4704,
+    "exactCaptureMatches": [
+      [
+        "WRAM",
+        "0x7000"
+      ]
+    ]
+  },
+  {
+    "rom": "0DA5E5",
+    "length": 2048,
+    "verifiedPrefix": 2048,
+    "exactCaptureMatches": [
+      [
+        "WRAM",
+        "0xf000"
+      ]
+    ]
+  },
+  {
+    "rom": "0EE8AD",
+    "length": 3072,
+    "verifiedPrefix": 3072,
+    "exactCaptureMatches": [
+      [
+        "WRAM",
+        "0xa000"
+      ]
+    ]
+  },
+  {
+    "rom": "1C8002",
+    "length": 7110,
+    "verifiedPrefix": 7110,
+    "exactCaptureMatches": []
+  },
+  {
+    "rom": "0C8000",
+    "length": 8192,
+    "verifiedPrefix": 8192,
+    "exactCaptureMatches": [
+      [
+        "VRAM",
+        "0x0"
+      ]
+    ]
+  },
+  {
+    "rom": "0C98A2",
+    "length": 8192,
+    "verifiedPrefix": 8192,
+    "exactCaptureMatches": [
+      [
+        "VRAM",
+        "0x2000"
+      ]
+    ]
+  },
+  {
+    "rom": "0CAFBF",
+    "length": 8192,
+    "verifiedPrefix": 8192,
+    "exactCaptureMatches": [
+      [
+        "VRAM",
+        "0x4000"
+      ]
+    ]
+  },
+  {
+    "rom": "0CC65E",
+    "length": 8192,
+    "verifiedPrefix": 8192,
+    "exactCaptureMatches": [
+      [
+        "VRAM",
+        "0x6000"
+      ]
+    ]
+  },
+  {
+    "rom": "0E8000",
+    "length": 1025,
+    "verifiedPrefix": 1025,
+    "exactCaptureMatches": []
+  },
+  {
+    "rom": "0E8307",
+    "length": 1025,
+    "verifiedPrefix": 1025,
+    "exactCaptureMatches": []
+  },
+  {
+    "rom": "0DD6D3",
+    "length": 2048,
+    "verifiedPrefix": 2048,
+    "exactCaptureMatches": [
+      [
+        "VRAM",
+        "0xf000"
+      ]
+    ]
+  },
+  {
+    "rom": "0E8651",
+    "length": 2048,
+    "verifiedPrefix": 2048,
+    "exactCaptureMatches": [
+      [
+        "VRAM",
+        "0xf800"
+      ]
+    ]
+  }
+]
