@@ -1,0 +1,17 @@
+{
+  "mode7A": 1280,
+  "mode7B": 0,
+  "mode7C": 0,
+  "mode7D": 1280,
+  "mode7X": 512,
+  "mode7Y": 512,
+  "mode7Hoff": 384,
+  "mode7Voff": 384,
+  "mode7FlipX": false,
+  "mode7FlipY": false,
+  "mode7LargeField": false,
+  "mode7Char0fill": false,
+  "screenYOffset": 7,
+  "selectedStart": 1,
+  "startPoints": []
+}
