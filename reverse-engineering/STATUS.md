@@ -21,6 +21,8 @@ The supplied ZIP remains at `E:\Downloads\Super Probotector - The Alien Rebels (
 
 `tools/build_assets.py` extracts first-stage maps using ROM metatile structures and constructs 228 player frame definitions from the European robot metasprite tables. The stage map output has been visually checked. Its current layout/order is still being reconciled against the live PPU tilemap capture.
 
+The player frame table at `$05:B2AF` is indexed in 16-byte records. The extracted records show explicit facing pairs rather than one frame that should always be mirrored: frame IDs 0/1 point to metasprites `$06:8510`/`$06:8529`; 2/3 point to `$06:8542`; 4/5 to `$06:8557`; 6/7 to `$06:8570`. Browser IDs 8/9 and 10/11 are additional poses and 14/15 form another pair. The browser now selects the paired frame ID from facing state, with no Canvas mirroring. This was visually checked after moving right then left; Playwright state reported `frameData: "06:8529"` for left-facing frame 1. This confirms selection of table-backed directional records, but not yet which full temporal sequences correspond to each player action.
+
 ## Current browser build status
 
 The browser code is a native Canvas/JavaScript prototype. It is not an emulator wrapper. It currently has a title screen, first-stage scenery, one robot animation atlas, basic move/jump/fire inputs, basic spawned placeholder enemies, score/lives and a placeholder stage progression. The browser prototype does not reproduce the ROM routines or full game behavior yet.
@@ -33,3 +35,7 @@ The browser code is a native Canvas/JavaScript prototype. It is not an emulator 
 * Reconstruct audio driver protocol, song sequences, samples, envelopes, loops, and sound effects; extracted samples are only candidates.
 * Correct metatile/map ordering from reference snapshots and add automated visual/state comparisons.
 * Publish source in a public GitHub repository and deploy the playable build with GitHub Pages.
+
+## Publishing status
+
+The incomplete milestone is public at `https://github.com/mysticalg/super-probotector-native-js`; GitHub Pages workflow deployment succeeded at `https://mysticalg.github.io/super-probotector-native-js/` (HTTP 200). The web code and extracted assets are published; no ROM image is included. Continue labeling it as an incomplete prototype until the remaining stages and systems are implemented and checked.
